@@ -207,6 +207,7 @@ a:focus {
   flex-direction: column;
   align-items: center;
   background-color: var(--white);
+  border-radius: 4px;
   box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
@@ -279,6 +280,10 @@ a:focus {
 
   color: rgba(255, 255, 255, 0.6);
 }
+.portfolio-buttons-list {
+  display: flex;
+  justify-content: center;
+}
 .portfolio-button {
   background: var(--light-grey);
   font-family: "Roboto", sans-serif;
@@ -286,12 +291,14 @@ a:focus {
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
-  /* identical to box height, or 162% */
-
+  margin-right: 8px;
+  margin-bottom: 50px;
+  margin-top: 94px;
   text-align: center;
-  letter-spacing: 0.03em;
-
+  border-radius: 4px;
   color: var(--black);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portfolio-button:hover {
   font-family: "Roboto", sans-serif;
@@ -302,19 +309,35 @@ a:focus {
   /* identical to box height, or 162% */
 
   text-align: center;
-  letter-spacing: 0.03em;
 
   color: var(--white);
 
   background: var(--blue);
 }
+.main-portfolio-content {
+  padding-bottom: 94px;
+}
+.card-set-works-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
+  
+}
+.card-set-works-list-item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  flex-basis: calc(100% - 3 * 30px) / 3);
+
+}
+
 .portfolio-title {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 36px;
-
+text-align: center;
   letter-spacing: 0.06em;
 
   color: var(--black);
@@ -325,9 +348,8 @@ a:focus {
   font-weight: normal;
   font-size: 16px;
   line-height: 30px;
-  /* identical to box height, or 187% */
+  align-content: center;
 
-  letter-spacing: 0.03em;
-
+text-align: center;
   color: var(--grey);
 }
