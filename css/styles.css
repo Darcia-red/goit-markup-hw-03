@@ -20,17 +20,17 @@
 .container-nav {
   display: flex;
   justify-content: flex-end;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  
 }
 .container-nav-portfolio {
  
 }
-.header {
+header {
   background-color: var(white);
    padding-right: 15px;
   padding-left: 15px;
-  
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 a:hover {
   color: var(--blue);
@@ -212,10 +212,12 @@ padding-bottom: 10px;
 .team {
   background: #f5f4fa;
   padding-bottom: 94px;
+   padding-top: 94px;
+  
 }
 .team-title {
-  padding-top: 94px;
-  padding-bottom: 50px;
+ 
+ margin-bottom: 50px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: bold;
